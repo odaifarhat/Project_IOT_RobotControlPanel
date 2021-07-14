@@ -1,0 +1,489 @@
+{
+  "intents": [
+    {
+      "intent": "Help",
+      "examples": [
+        {
+          "text": "help"
+        },
+        {
+          "text": "help me"
+        },
+        {
+          "text": "h m!"
+        },
+        {
+          "text": "hp"
+        }
+      ],
+      "description": "Helps"
+    },
+    {
+      "intent": "How_are_you",
+      "examples": [
+        {
+          "text": "H a u"
+        },
+        {
+          "text": "How are you?"
+        },
+        {
+          "text": "How you"
+        }
+      ],
+      "description": "How are you"
+    },
+    {
+      "intent": "services",
+      "examples": [
+        {
+          "text": "s"
+        },
+        {
+          "text": "serv"
+        },
+        {
+          "text": "serves"
+        },
+        {
+          "text": "serveses"
+        },
+        {
+          "text": "services"
+        },
+        {
+          "text": "the services"
+        },
+        {
+          "text": "What are the services?"
+        },
+        {
+          "text": "What services"
+        }
+      ],
+      "description": "serveses"
+    },
+    {
+      "intent": "Thank_You",
+      "examples": [
+        {
+          "text": "Thank"
+        },
+        {
+          "text": "Thanks"
+        },
+        {
+          "text": "thx"
+        }
+      ],
+      "description": "Thanks"
+    },
+    {
+      "intent": "welcome",
+      "examples": [
+        {
+          "text": "h"
+        },
+        {
+          "text": "hallo"
+        },
+        {
+          "text": "halloooo"
+        },
+        {
+          "text": "halo"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "heloo"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "hi"
+        },
+        {
+          "text": "welcome"
+        }
+      ],
+      "description": "welcome"
+    },
+    {
+      "intent": "who_are_we",
+      "examples": [
+        {
+          "text": "w a y"
+        },
+        {
+          "text": "who are you"
+        },
+        {
+          "text": "who are you?"
+        },
+        {
+          "text": "who you?"
+        }
+      ],
+      "description": "who are we"
+    },
+    {
+      "intent": "التحية",
+      "examples": [
+        {
+          "text": "."
+        },
+        {
+          "text": "أهلا"
+        },
+        {
+          "text": "السلام عليكم"
+        },
+        {
+          "text": "اهلا"
+        },
+        {
+          "text": "صباح الخير"
+        },
+        {
+          "text": "كيف حالك"
+        },
+        {
+          "text": "مرحبا"
+        },
+        {
+          "text": "مرحباً"
+        },
+        {
+          "text": "مساء الخير"
+        },
+        {
+          "text": "هلا"
+        }
+      ],
+      "description": "مرحبا"
+    },
+    {
+      "intent": "المساعدة",
+      "examples": [
+        {
+          "text": "أريد مساعدة"
+        },
+        {
+          "text": "المساعدة"
+        },
+        {
+          "text": "ساعدني"
+        },
+        {
+          "text": "كيف تستطيع مساعدتي"
+        },
+        {
+          "text": "هل تستطيع مساعدتي"
+        },
+        {
+          "text": "هل تستطيع مساعدتي؟"
+        },
+        {
+          "text": "هيلب"
+        }
+      ],
+      "description": "المساعدة"
+    },
+    {
+      "intent": "خدماتي",
+      "examples": [
+        {
+          "text": "أريد خدمة"
+        },
+        {
+          "text": "خدمه"
+        },
+        {
+          "text": "خماتك"
+        },
+        {
+          "text": "ماذا تقدمون"
+        },
+        {
+          "text": "ماهي الخدمات"
+        }
+      ],
+      "description": "الخدمات"
+    },
+    {
+      "intent": "شكرا",
+      "examples": [
+        {
+          "text": "ثانكس"
+        },
+        {
+          "text": "ثانكيو"
+        },
+        {
+          "text": "شكرا"
+        },
+        {
+          "text": "شكراً"
+        },
+        {
+          "text": "شكرا لك"
+        }
+      ],
+      "description": "الشكر"
+    },
+    {
+      "intent": "نحن",
+      "examples": [
+        {
+          "text": "!"
+        },
+        {
+          "text": "؟"
+        },
+        {
+          "text": "من أنت"
+        },
+        {
+          "text": "من أنت؟"
+        },
+        {
+          "text": "من أنتم؟"
+        },
+        {
+          "text": "من انت"
+        },
+        {
+          "text": "من انتم"
+        },
+        {
+          "text": "من انتم؟"
+        },
+        {
+          "text": "من نحن"
+        },
+        {
+          "text": "هل أنتم شركة"
+        },
+        {
+          "text": "هل انتم شركة"
+        }
+      ],
+      "description": "تعريف من نحن"
+    }
+  ],
+  "entities": [],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    },
+    "from-sample": true
+  },
+  "dialog_nodes": [
+    {
+      "type": "standard",
+      "title": "How are you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "I'm fine, what about you?"
+              },
+              {
+                "text": "I'm fine, And You?"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#How_are_you",
+      "dialog_node": "node_1_1626215836225",
+      "previous_sibling": "node_4_1626218028857"
+    },
+    {
+      "type": "standard",
+      "title": "أي شيء آخر",
+      "output": {
+        "generic": [
+          {
+            "title": "لم أفهم ماذا تقول؟",
+            "options": [
+              {
+                "label": "خدماتي",
+                "value": {
+                  "input": {
+                    "text": "خدماتي"
+                  }
+                }
+              },
+              {
+                "label": "من نحن",
+                "value": {
+                  "input": {
+                    "text": "من نحن"
+                  }
+                }
+              }
+            ],
+            "description": ":اختر من القائمة  ",
+            "response_type": "option"
+          }
+        ]
+      },
+      "conditions": "anything_else",
+      "dialog_node": "node_1_1626216948542",
+      "previous_sibling": "node_4_1626216429447"
+    },
+    {
+      "type": "standard",
+      "title": "Thank you",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "You are Welcome"
+              },
+              {
+                "text": "Your Welcome"
+              },
+              {
+                "text": "Don't thank me this is my job you are welcome"
+              },
+              {
+                "text": "Don't thank me and don't forget me this is my job you are welcome"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#Thank_You",
+      "dialog_node": "node_3_1626214486454",
+      "previous_sibling": "node_1_1626216948542"
+    },
+    {
+      "type": "standard",
+      "title": "مرحبا",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "أهلاً وسهلاً بك , كيف أستطيع مساعدتك؟"
+              },
+              {
+                "text": "مرحباً بك ,كيف أستطيع مساعدتك؟"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#التحية",
+      "digress_in": "does_not_return",
+      "dialog_node": "node_4_1626216429447",
+      "previous_sibling": "مرحبا"
+    },
+    {
+      "type": "standard",
+      "title": "من نحن",
+      "output": {
+        "generic": [
+          {
+            "response_type": "channel_transfer",
+            "transfer_info": {
+              "target": {
+                "chat": {
+                  "url": "https://www.s-m.com.sa/#us"
+                }
+              }
+            },
+            "message_to_user": "حسنًا ، انقر فوق هذا الرابط وتعرف علينا. ستستمر الدردشة على صفحة ويب جديدة."
+          }
+        ]
+      },
+      "conditions": "#نحن",
+      "dialog_node": "node_4_1626218028857",
+      "previous_sibling": "node_8_1626217251081"
+    },
+    {
+      "type": "standard",
+      "title": "خدماتي",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "تطبيقات الذكاء الصناعي/برمجة التطبيقات/تصميم الدوائر الإكترونية/الطباعة ثلاثية الأبعاد/النظم المضمنة/التحكم الآلي والروبوت."
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "conditions": "#خدماتي",
+      "dialog_node": "node_8_1626217251081"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi, Nice to met you"
+              },
+              {
+                "text": "Hi"
+              },
+              {
+                "text": "Hello"
+              },
+              {
+                "text": "Your Welcome"
+              },
+              {
+                "text": "Welcome, I'm glad to have you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "#welcome",
+      "dialog_node": "مرحبا",
+      "previous_sibling": "node_1_1626215836225",
+      "disambiguation_opt_out": true
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "disambiguation": {
+      "prompt": ":هل قصدت",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "كل ما سبق خطأ"
+    },
+    "human_agent_assist": {
+      "prompt": ":هل قصدت"
+    }
+  },
+  "learning_opt_out": false,
+  "name": "welcome",
+  "language": "ar",
+  "description": "Welcome Styles"
+}
